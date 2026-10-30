@@ -2,8 +2,15 @@
 
 *Versione 1.4 – 30 ottobre 2026*
 
+> [!NOTE]
+> **Dove si trova oggi questo documento**
+>
+> Questo repo, `renatotelefono/drone-specs`, è una **copia di prova** delle specifiche, separata dal progetto. Qui il documento sta sul branch `main` e si modifica normalmente.
+>
+> Le regole qui sotto **non valgono ancora**: si applicheranno quando il documento sarà pubblicato nel repo originale con il codice, `bitfent/drone137`, sul branch `specs`. Sono scritte per quel momento, e da lì in poi valgono per chiunque lavori sulle specifiche.
+
 > [!IMPORTANT]
-> **Regole per lavorare su questo documento**
+> **Regole per lavorare su questo documento nel repo `bitfent/drone137`**
 >
 > Il branch `specs` contiene un solo file, `product-specifications.md`, con le specifiche di prodotto in fase di analisi preliminare.
 >
