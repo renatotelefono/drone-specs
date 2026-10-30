@@ -2,6 +2,34 @@
 
 *Versione 1.4 – 30 ottobre 2026*
 
+> [!IMPORTANT]
+> **Regole per lavorare su questo documento**
+>
+> Il branch `specs` contiene un solo file, `product-specifications.md`, con le specifiche di prodotto in fase di analisi preliminare.
+>
+> È un **branch orfano**: non parte da `main` e non ha storia in comune con il codice del drone. Chi lo apre su GitHub vede soltanto questo documento.
+>
+> **Perché è separato da `main`**
+>
+> - **È pulito**: nel branch c'è solo il documento, senza cartelle di codice intorno.
+> - **È al sicuro da `main`**: le modifiche alle specifiche non toccano il codice.
+> - **Non contiene il `CLAUDE.md` di `main`**, che chiede di fare push su `main`. Un assistente AI che lavora su questo branch non riceve quell'istruzione.
+>
+> **Come si modifica**
+>
+> 1. Si lavora **solo sul branch `specs`**: nessuna modifica e nessun push su `main`.
+> 2. **Correzioni piccole** (refusi, link, formattazione): si modifica il file direttamente su GitHub con la matita e si salva con un messaggio che dice cosa è cambiato.
+> 3. **Modifiche sostanziali**: si salva su un branch nuovo (es. `specs-nome-argomento`) e si apre una **pull request verso `specs`**, così gli altri possono commentare prima dell'unione.
+> 4. **Idee e domande non ancora decise**: si apre un *Issue* su GitHub; quando c'è una decisione, diventa una modifica al documento.
+> 5. **Versione e data** sotto il titolo si aggiornano quando si unisce un gruppo di modifiche concordate. La storia completa resta in *History* su GitHub.
+> 6. **Chi usa un assistente AI** (Claude o altri) gli indica all'inizio: *lavora sul branch `specs`, file `product-specifications.md`; proponi le modifiche con una pull request verso `specs`; non fare push su `main`*.
+>
+> **Limite**
+>
+> Poiché non ha storia in comune con `main`, GitHub non permette una pull request da `specs` verso `main`. Se le specifiche dovranno entrare nel progetto, si copia il file in `main` con un commit normale. Le pull request **verso `specs`** funzionano normalmente.
+
+---
+
 ## Sintesi
 
 Il prodotto è un unico micro-drone indoor autonomo, con base di ricarica, venduto una tantum in quattro configurazioni: casa, ufficio piccolo, magazzino piccolo e locali tecnici. Oggi in Italia non esiste un prodotto equivalente acquistabile: le soluzioni esistenti sono ferme, solo USA o riservate a polizia e industria.
